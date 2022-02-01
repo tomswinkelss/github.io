@@ -1,0 +1,131 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+a {
+  color: white;
+}
+
+
+/* Balk bovenaan */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border: 1px solid black;
+  position: fixed;
+  width: 100%;
+  background-color: #1c1c1c;
+  z-index: 2;
+}
+
+.logo {
+  text-align: center;
+  border: 1px solid black;
+  width: 70px;
+  height: 100%;
+  background-color: #7e7e7e;
+}
+
+.logo img {
+  height: 70px;
+  width: 70px;
+  margin-right: 3px;
+}
+
+.link {
+  display: flex;
+}
+
+.link li {
+  display: inline-block;
+  margin: 5px 10px 0px 5px;
+  font-size: 1.25rem;
+  color: white;
+}
+
+
+/* Foto's van Droes */
+
+.droes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  background-image: url("../images/joeyloekie/achtergrond.jpg");
+  position: relative;
+  top: 70px;
+}
+
+.tekstdroes {
+  width: 225px;
+  margin: 10px 500px;
+  padding: 5px 30px;
+  text-align: center;
+  height: auto;
+  font-size: 1.3rem;
+  background-color: rgba(222, 222, 222, 0.4);
+  border: 1px none black;
+  border-radius: 40px;
+}
+
+
+.vakdroes {
+  width: auto;
+  margin: 40px 50px;
+  display: flex;
+  text-align: center;
+}
+
+
+.fotodroes {
+  width: 350px;
+  height: 350px;
+  background-color: lightgrey;
+}
+
+
+
+/* onderkant */
+.footer {
+  height: 115px;
+  margin-bottom: 0px;
+  padding: 5px 10px 30px 10px;
+  background-color: rgba(222, 222, 222, 0.30);
+  background-image: url("../images/bannerfooter.png");
+  position: relative;
+  top: 70px;
+  color: #CECECE;
+}
+
+.footer:hover {
+  background-image: url("https://thumbs.gfycat.com/BetterHandmadeGull-size_restricted.gif");
+  transition: background-image 1s ease-out 5s;
+}
+
+.informatie h2 {
+  color: white;
+}
+
+.informatie li {
+  list-style-type:  square;
+  font-size: 1.10rem
+}
+
+.informatie strong {
+  color: #D8D8D8;
+}
+
+
+@media only screen and (max-width: 916px) {
+  .droes {
+    background-image: url("../images/joeyloekie/achtergrond2.jpg");
+  }
+}

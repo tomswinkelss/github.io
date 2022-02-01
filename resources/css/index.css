@@ -1,0 +1,298 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  }
+
+  .knop {
+    padding: 10px;
+    background-color: rgba(244, 244, 244, 0.30);
+    font-size: 1rem;
+  }
+
+
+/* Balk bovenaan */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  border: 1px solid black;
+  background-color: #1c1c1c;
+}
+
+.logo {
+  text-align: center;
+  width: 70px;
+  height: 100%;
+  background-color: #7e7e7e;
+}
+
+.logo img {
+  height: 70px;
+  width: 70px;
+  margin-right: 3px;
+}
+
+.link li {
+  display: inline-block;
+  margin: 5px 10px 0px 5px;
+  font-size: 1.25rem;
+  color: white;
+}
+
+
+/* inleiding */
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  min-height: 450px;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+  margin: 0px 0px 0px 0px;
+  color: white;
+  background-color: #000;
+  background-image: url("../images/achtergrondintro1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.introtekst {
+  max-width: 300px;
+  text-align: center;
+  font-family: "Antic Didone";
+}
+
+.introtekst h2 {
+  letter-spacing: 10px;
+}
+
+.introtekst h3 {
+  line-height: 25px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+
+/* foto's van de hondenrassen met uitleg */
+.fotohonden {
+  height: auto;
+  margin: 0px 0px;
+  position: relative;
+  top: 70px;
+  background-image: url("../images/achtergrondfotovak.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #0b0b0b;
+  scroll-margin-top: 20px;
+}
+
+.fotohonden h2 {
+  margin-top: 0px;
+  padding-top: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  }
+
+
+.fotovakken {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 75%;
+}
+
+.fotovak {
+  height: auto;
+  width: 275px;
+  margin: 10px 30px;
+  min-width: 400px;
+}
+
+
+.foto {
+  height: 140px;
+  text-align: center;
+  color: white;
+  transition: height 1s ease-out, width 1s ease-out;
+}
+
+.foto:hover {
+  height: 175px;
+  border-radius: 75px;
+  width: auto;
+  transition: height 750ms ease-out, width 750ms ease-out, border-radius 750ms ease-out;
+}
+
+.foto img {
+  height: 100%;
+  border: 6px double darkgrey;
+  border-radius: 60px;
+}
+
+
+.fototekst {
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.60);
+  color: black;
+  text-align: center;
+}
+
+
+/* Foto met uitleg honden van Quinn en Tom */
+.hondquinntom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  height: auto;
+  min-height: 400px;
+  margin: 0px 0px;
+  padding: 50px;
+}
+
+#hondquinn {
+  flex-wrap: wrap;
+  background-image: url("../images/droes/droes-achtergrond3.png");
+}
+
+#hondtom {
+  flex-wrap: wrap-reverse;
+  background-image: url("../images/joeyloekie/fotojoeyloekie-achtergrond.png");
+}
+
+.fotohondquinntom img {
+  height: 100%;
+  margin: 10px;
+  border: 1px none black;
+  border-radius: 150px;
+
+}
+
+.teksthondquinntom {
+  height: auto;
+  min-height: 300px;
+  max-width: 700px;
+  min-width: 300px;
+  border: 1px none black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(222, 222, 222, 0.30);
+  text-align: center;
+}
+
+.teksthondquinntom h1 {
+  font-size: 2rem;
+}
+
+.teksthondquinntom h3 {
+  font-size: 1.25rem;
+}
+
+.teksthondquinntom a {
+  text-decoration: none;
+}
+
+.fotohondtom {
+  height: 350px;
+  width: auto;
+  min-width: 350px;
+  text-align: center;
+  transition: font-size 750ms ease-out 2s;
+  font-size: 0px;
+}
+
+.fotohondtom:hover {
+  font-size: 16px;
+  transition: font-size 500ms ease-out;
+}
+
+.fotohondtom img {
+  height: 100%;
+  border: 1px none black;
+  border-radius: 175px;
+}
+
+
+/* Onderkant */
+
+.footer {
+  position: relative;
+  top: 70px;
+  height: 115px;
+  margin-bottom: 0px;
+  padding: 5px 10px 30px 10px;
+  background-color: rgba(222, 222, 222, 0.30);
+  background-image: url("../images/bannerfooter.png");
+  color: #CECECE;
+  transition: background-image 1s ease-out 5s;
+}
+
+.footer:hover {
+  background-image: url("https://thumbs.gfycat.com/BetterHandmadeGull-size_restricted.gif");
+  transition: background-image 1s ease-out 5s;
+}
+
+.informatie h2 {
+  color: white;
+}
+
+.informatie li {
+  list-style-type: square;
+  font-size: 1.10rem
+}
+
+.informatie strong {
+  color: #E8E8E8;
+}
+
+
+/* Media Queries van de foto's met info over hondenrassen */
+@media only screen and (max-width: 1029px) {
+  .fotohonden {
+    background-image: url("../images/achtergrondfotovak2.jpg");
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  .fotohonden {
+    background-image: url("../images/achtergrondfotovak3.jpg");
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  .fotovak {
+    min-height: 250px;
+  }
+}
+
+
+/* Media Queries van de introductie */
+@media only screen and (max-width: 900px) {
+  .intro {
+    background-image: url("../images/achtergrondintro2.jpg");
+    justify-content: center;
+    text-align: right;
+  }
+}
